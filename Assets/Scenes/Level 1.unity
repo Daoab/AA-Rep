@@ -308,6 +308,46 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.003
       objectReference: {fileID: 0}
+    - target: {fileID: 23303296455041220, guid: 7003e0d2c4a89494da26e85e7e0b1002,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 46033f8dff5dea94f8173d22080fafdf, type: 2}
+    - target: {fileID: 23040163355228604, guid: 7003e0d2c4a89494da26e85e7e0b1002,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 46033f8dff5dea94f8173d22080fafdf, type: 2}
+    - target: {fileID: 23572728117941714, guid: 7003e0d2c4a89494da26e85e7e0b1002,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 46033f8dff5dea94f8173d22080fafdf, type: 2}
+    - target: {fileID: 23499083166273068, guid: 7003e0d2c4a89494da26e85e7e0b1002,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 46033f8dff5dea94f8173d22080fafdf, type: 2}
+    - target: {fileID: 23352780364647204, guid: 7003e0d2c4a89494da26e85e7e0b1002,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 46033f8dff5dea94f8173d22080fafdf, type: 2}
+    - target: {fileID: 23092205100056620, guid: 7003e0d2c4a89494da26e85e7e0b1002,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 46033f8dff5dea94f8173d22080fafdf, type: 2}
+    - target: {fileID: 23114417061337794, guid: 7003e0d2c4a89494da26e85e7e0b1002,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 46033f8dff5dea94f8173d22080fafdf, type: 2}
+    - target: {fileID: 23225969875639758, guid: 7003e0d2c4a89494da26e85e7e0b1002,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 46033f8dff5dea94f8173d22080fafdf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7003e0d2c4a89494da26e85e7e0b1002, type: 2}
   m_IsPrefabAsset: 0
