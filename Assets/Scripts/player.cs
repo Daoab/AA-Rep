@@ -62,4 +62,14 @@ public class player : MonoBehaviour {
 
         transform.localPosition = new Vector3(clampedX, clampedY, transform.localPosition.z);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        print("player collided with something");
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        print("player trigger with something");
+    }
 }
