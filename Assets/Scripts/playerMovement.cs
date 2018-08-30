@@ -4,12 +4,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class player : MonoBehaviour {
+public class playerMovement : MonoBehaviour {
+
+    [Header("General")]
 
     [Tooltip("In m/s")][SerializeField] float speed = 5f;
+    [SerializeField] float xRange = 7f;
+    [SerializeField] float yRange = 4f;
+
+    [Header("Screen-Position Parameters")]
 
     [SerializeField] float positionPitchFactor = -5f;
     [SerializeField] float positionYawFactor = 4f;
+
+    [Header("Control-Throw Parameters")]
 
     [SerializeField] float controlPitchFactor = -12f;
     [SerializeField] float controlRollFactor = -12f;
@@ -24,10 +32,8 @@ public class player : MonoBehaviour {
     float rawY;
     float clampedY;
 
-    [SerializeField]float xRange = 7f;
-    [SerializeField]float yRange = 4f;
-
-
+    private bool isDead = false;
+    
     // Use this for initialization
     void Start () {
         
@@ -35,8 +41,10 @@ public class player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (!isDead) { 
         ProcessTranslation();
         ProcessRotation();
+        }
 	}
 
     private void ProcessRotation()
@@ -63,13 +71,9 @@ public class player : MonoBehaviour {
         transform.localPosition = new Vector3(clampedX, clampedY, transform.localPosition.z);
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        print("player collided with something");
+    void OnPlayerDeath() { //Called by string reference from collisionHandler
+        print("controls deactivated");
+        isDead = true;
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        print("player trigger with something");
-    }
 }
