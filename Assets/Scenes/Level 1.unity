@@ -397,8 +397,7 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 156.70901
       objectReference: {fileID: 0}
-    - target: {fileID: 65927369608075204, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
@@ -610,8 +609,7 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -8.444
       objectReference: {fileID: 0}
-    - target: {fileID: 65091115242093228, guid: a19af03b7c64771489f010af565cc649,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
@@ -954,6 +952,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 22.651001, z: 0}
+--- !u!1 &1044140300 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1074994750746910, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1556094216}
+--- !u!114 &1044140301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1044140300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c0f0e4ba78d7a84e9e2f4277c6bcf42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1083953128
 Prefab:
   m_ObjectHideFlags: 0
@@ -1021,8 +1035,7 @@ Prefab:
       propertyPath: m_Name
       value: Ship_03 (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 65927369608075204, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
@@ -1206,6 +1219,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1515270641 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1074994750746910, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1083953128}
+--- !u!114 &1515270642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1515270641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c0f0e4ba78d7a84e9e2f4277c6bcf42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1556094216
 Prefab:
   m_ObjectHideFlags: 0
@@ -1273,8 +1302,7 @@ Prefab:
       propertyPath: m_Name
       value: Ship_03 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 65927369608075204, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
@@ -1319,6 +1347,22 @@ Transform:
   m_Father: {fileID: 588516705}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1791383249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1469320689751860, guid: a19af03b7c64771489f010af565cc649,
+    type: 2}
+  m_PrefabInternal: {fileID: 817399826}
+--- !u!114 &1791383250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1791383249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c0f0e4ba78d7a84e9e2f4277c6bcf42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2007331580
 GameObject:
   m_ObjectHideFlags: 0
@@ -1389,3 +1433,19 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b4cb9e172447d247a6ce46a88314e8d, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &2110601106 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1074994750746910, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd,
+    type: 2}
+  m_PrefabInternal: {fileID: 551369864}
+--- !u!114 &2110601107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110601106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c0f0e4ba78d7a84e9e2f4277c6bcf42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
