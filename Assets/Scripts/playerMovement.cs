@@ -22,6 +22,8 @@ public class playerMovement : MonoBehaviour {
     [SerializeField] float controlPitchFactor = -12f;
     [SerializeField] float controlRollFactor = -12f;
 
+    [SerializeField] GameObject[] guns;
+
     float xThrow;
     float xOffset;
     float rawX;
@@ -44,6 +46,7 @@ public class playerMovement : MonoBehaviour {
         if (!isDead) { 
         ProcessTranslation();
         ProcessRotation();
+        ProcessFiring();
         }
 	}
 
@@ -69,6 +72,32 @@ public class playerMovement : MonoBehaviour {
         clampedY = Mathf.Clamp(rawY, -yRange, yRange);
 
         transform.localPosition = new Vector3(clampedX, clampedY, transform.localPosition.z);
+    }
+
+    private void ProcessFiring()
+    {
+        if (CrossPlatformInputManager.GetButton("Fire1"))
+        {
+            ActivateGuns();
+        }
+        else {
+            DisableGuns();
+        }
+    }
+
+    private void ActivateGuns()
+    {
+        foreach (GameObject gun in guns) {
+            gun.SetActive(true);
+        }
+    }
+
+    private void DisableGuns()
+    {
+        foreach (GameObject gun in guns)
+        {
+            gun.SetActive(false);
+        }
     }
 
     void OnPlayerDeath() { //Called by string reference from collisionHandler

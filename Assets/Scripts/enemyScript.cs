@@ -9,6 +9,7 @@ public class enemyScript : MonoBehaviour {
 
     [SerializeField] GameObject deathFx;
     [SerializeField] Transform parent;
+    [SerializeField][Tooltip("Number of hits to die")] int hp = 2;
 
     [Header("Score Board")]
 
@@ -36,13 +37,23 @@ public class enemyScript : MonoBehaviour {
 
     private void OnParticleCollision(GameObject other)
     {
-        if (hit)
+        if (hit && hp <= 0)
         {
             hit = false;
-            GameObject fx = Instantiate(deathFx, transform.position, Quaternion.identity);
-            fx.transform.parent = parent;
-            scoreBoard.ScoreHit(score);
-            Destroy(gameObject);
+            KillEnemy();
         }
+        else {
+            hp --;
+        }
+    }
+
+    private void KillEnemy()
+    {
+        GameObject fx = Instantiate(deathFx, transform.position, Quaternion.identity);
+        fx.transform.parent = parent;
+
+        scoreBoard.ScoreHit(score);
+
+        Destroy(gameObject);
     }
 }
