@@ -31,8 +31,6 @@ public class enemyScript : MonoBehaviour {
     {
         collider = gameObject.AddComponent<BoxCollider>();
         collider.isTrigger = false;
-        //collider.size = new Vector3(0.5f, 0.5f, 0.5f);
-        //collider.center = new Vector3(0f, 0f, 0f);
     }
 
     private void OnParticleCollision(GameObject other)
